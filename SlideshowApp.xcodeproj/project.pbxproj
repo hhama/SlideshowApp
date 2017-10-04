@@ -13,6 +13,7 @@
 		E13E65671F847A1B004B8AFE /* flower003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E13E65621F847A1B004B8AFE /* flower003.JPG */; };
 		E13E65681F847A1B004B8AFE /* flower004.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E13E65631F847A1B004B8AFE /* flower004.JPG */; };
 		E13E65691F847A1B004B8AFE /* flower005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E13E65641F847A1B004B8AFE /* flower005.JPG */; };
+		E13E656B1F84ED12004B8AFE /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13E656A1F84ED12004B8AFE /* PhotoViewController.swift */; };
 		E1600D101F83ADD90027813E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1600D0F1F83ADD90027813E /* AppDelegate.swift */; };
 		E1600D121F83ADD90027813E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1600D111F83ADD90027813E /* ViewController.swift */; };
 		E1600D151F83ADD90027813E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1600D131F83ADD90027813E /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		E13E65621F847A1B004B8AFE /* flower003.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower003.JPG; sourceTree = "<group>"; };
 		E13E65631F847A1B004B8AFE /* flower004.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower004.JPG; sourceTree = "<group>"; };
 		E13E65641F847A1B004B8AFE /* flower005.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flower005.JPG; sourceTree = "<group>"; };
+		E13E656A1F84ED12004B8AFE /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		E1600D0C1F83ADD90027813E /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1600D0F1F83ADD90027813E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1600D111F83ADD90027813E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E1600D0F1F83ADD90027813E /* AppDelegate.swift */,
 				E1600D111F83ADD90027813E /* ViewController.swift */,
 				E1600D131F83ADD90027813E /* Main.storyboard */,
+				E13E656A1F84ED12004B8AFE /* PhotoViewController.swift */,
 				E13E655E1F847195004B8AFE /* ButtonCustomClass.swift */,
 				E1600D161F83ADD90027813E /* Assets.xcassets */,
 				E1600D181F83ADD90027813E /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1600D121F83ADD90027813E /* ViewController.swift in Sources */,
+				E13E656B1F84ED12004B8AFE /* PhotoViewController.swift in Sources */,
 				E13E655F1F847195004B8AFE /* ButtonCustomClass.swift in Sources */,
 				E1600D101F83ADD90027813E /* AppDelegate.swift in Sources */,
 			);

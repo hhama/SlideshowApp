@@ -31,6 +31,9 @@ class ViewController: UIViewController {
     //表示している画像の番号
     var dispImageNo = 0
     
+    //画面遷移時のdispImageNoをバックアップしておく
+    var backupDispImageNo = 0
+    
     //スライドショーの状態を表すフラグ
     var slideshowFlag = false
     
@@ -85,6 +88,16 @@ class ViewController: UIViewController {
         displayImage()
     }
     
+    // 遷移先Viewへパラメータの受け渡し
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //segueから遷移先のPhotoViewControllerを取得する。
+        let photoViewController:PhotoViewController = segue.destination as! PhotoViewController
+        
+        //遷移先のPhotoViewControllerで宣言しているdispImageNoに値を代入して渡す。
+        photoViewController.dispImageNo = self.dispImageNo
+
+        backupDispImageNo = dispImageNo
+    }
     
     // 再生・停止ボタン IBAction
     @IBAction func playButton(_ sender: Any) {
@@ -126,6 +139,12 @@ class ViewController: UIViewController {
     // 戻るボタン IBAction
     @IBAction func backButton(_ sender: Any) {
         dispImageNo -= 1
+        displayImage()
+    }
+    
+    // 遷移先から戻るためのメソッド
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+        dispImageNo = backupDispImageNo
         displayImage()
     }
     
